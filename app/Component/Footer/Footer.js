@@ -4,6 +4,9 @@
 import React from 'react';
 import componentHandler from 'material-design-lite'
 import ReactDOM from 'react-dom';
+if (process.env.BROWSER) {
+	require('./Footer.sass');
+}
 
 
 export default class Footer extends React.Component{
@@ -15,10 +18,7 @@ export default class Footer extends React.Component{
 		return(
 			<footer className="mdl-mini-footer navbar-fixed-bottom">
 				<div className="mdl-mini-footer__left-section">
-					<div className="mdl-logo">健客</div>
-					<ul className="mdl-mini-footer__link-list">
-						<li>帮助</li>
-					</ul>
+					<div className="mdl-logo"><a>T.N.T科技</a></div>
 				</div>
 			</footer>
 		)

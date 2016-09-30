@@ -21,7 +21,6 @@ export default class MainRouter extends React.Component {
 				<Route path="/" component={Main}>
 					<IndexRoute component={Home}/>
 					<Route path="contact" component={Contact}/>
-					<Route path="about" component={About}/>
 				</Route>
 			</Router>
 

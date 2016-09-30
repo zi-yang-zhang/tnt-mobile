@@ -114,7 +114,13 @@ module.exports = (option)=> {
 				loaders: [
 					{ test: /\.js?$/, loader: 'babel', exclude: [/node_modules/, /__tests__/] },
 					{ test: /\.sass$/, loader: ExtractTextPlugin.extract('style', 'css!sass?indentedSyntax')},
-					{ test: /\.json$/, loader: 'json'}
+					{ test: /\.json$/, loader: 'json'},
+					{
+						test: /\.(jpe?g|png|gif|svg)$/i,
+						loaders: [
+							'file?hash=sha512&digest=hex&name=[hash].[ext]'
+						]
+					}
 				]
 			},
 			plugins:appPlugin

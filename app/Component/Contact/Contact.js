@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import { Jumbotron }from 'react-bootstrap';
+import { Jumbotron, Glyphicon }from 'react-bootstrap';
 
 if (process.env.BROWSER) {
 	require('./Contact.sass');
@@ -17,11 +17,12 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<main>
-				<ReactCSSTransitionGroup transitionName = "title"
+				<ReactCSSTransitionGroup transitionName = "contact-container"
 										 transitionAppear = {true} transitionAppearTimeout = {500}
 										 transitionEnter = {true} transitionLeave = {false}>
-					<Jumbotron className="title-container">
-						<h1>联系</h1>
+					<Jumbotron className="contact-container">
+						<p>联系我们：</p>
+						<Glyphicon glyph="envelope" className="glyph-margin"/><span>: <a href="mailto:jk-mobile@hotmail.com">jk-mobile@hotmail.com</a></span>
 					</Jumbotron>
 				</ReactCSSTransitionGroup>
 

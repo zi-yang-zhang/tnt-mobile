@@ -5,8 +5,7 @@
   "scripts": {
     "build-dev-app": "webpack --config config/webpack-config-dev-app.js --progress --colors  ",
     "build-and-load-dev-client-app": "node dev-server-dashboard",
-    "build-dev-all":"webpack --config config/webpack-config-dev-all.js --progress --colors  ",
-    "build-prod-all":"webpack --config config/webpack-config-prod-all.js --progress --colors  "
+    "build-prod":"webpack --config config/webpack-config-prod.js --progress --colors  "
   },
   "dependencies": {
     "react": "^15.2.1",

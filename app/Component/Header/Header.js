@@ -2,7 +2,6 @@
  * Created by robertzzy on 05/07/16.
  */
 import React from 'react';
-import logo from "../../logo2.png"
 import { Link } from 'react-router'
 
 if (process.env.BROWSER) {
@@ -22,7 +21,6 @@ export default class Header extends React.Component {
 					<span className="mdl-layout-title"><Link to="/">健客</Link></span>
 					<div className="mdl-layout-spacer"></div>
 					<nav className="mdl-navigation">
-						<Link to="/about" className="mdl-navigation__link" activeClassName="active-link">关于</Link>
 						<Link to="/contact" className="mdl-navigation__link" activeClassName="active-link">联系我们</Link>
 					</nav>
 				</div>
